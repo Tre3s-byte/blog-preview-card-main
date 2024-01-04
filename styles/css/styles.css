@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: hsl(47, 88%, 63%);
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  width: 20.9em;
+  height: 29.3em;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background: hsl(0, 0%, 100%);
+  border: 1px solid black;
+  border-radius: 1.2em;
+  -webkit-box-shadow: 10px 10px 0px -3px rgb(0, 0, 0);
+  -moz-box-shadow: 10px 10px 0px -3px rgb(0, 0, 0);
+  box-shadow: 10px 10px 0px -3px rgb(0, 0, 0);
+  cursor: pointer;
+}
+#card #card__header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 89%;
+  height: 55%;
+  gap: 1em;
+  margin-left: 1.2em;
+  margin-top: 1.2em;
+}
+#card #card__header .header__img {
+  border-radius: 0.5em;
+}
+#card #card__header h4 {
+  background: hsl(47, 88%, 63%);
+  width: 25%;
+  font-size: 14px;
+  text-align: center;
+  padding: 0.3em 0;
+  border-radius: 0.2em;
+}
+#card #card__header p {
+  font-size: 14px;
+  font-weight: 600;
+}
+#card #card__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-left: 1.2em;
+  margin-top: 1.2em;
+  width: 90%;
+  height: 45%;
+  gap: 1em;
+}
+#card #card__content h1 {
+  font-size: 22px;
+  cursor: default;
+}
+#card #card__content p {
+  font-size: 14px;
+  color: hsl(0, 0%, 50%);
+}
+#card #footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: 1.2em;
+  gap: 0.5em;
+}
+#card #footer .footer__img {
+  width: 15%;
+}
+#card #footer p {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+#card:hover #card__content h1 {
+  color: hsl(47, 88%, 63%);
+}
+
+.attribution {
+  margin-top: 1em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=styles.css.map */

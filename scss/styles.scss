@@ -1,0 +1,89 @@
+@import "./resets";
+@import "./constructors";
+@import "./variables";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: $background;
+  display: flex;
+  @include flex-center(column);
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  width: 20.9em;
+  height: 29.3em;
+  @include flex-center(column, flex-start);
+  background: $White;
+  border: 1px solid black;
+  border-radius: 1.2em;
+  @include box-shadow;
+  cursor: pointer;
+  #card__header {
+    @include flex-center(column, flex-start);
+    width: 89%;
+    height: 55%;
+    gap: 1em;
+    @include indentation;
+    .header__img {
+      border-radius: 0.5em;
+    }
+    h4 {
+      background: $background;
+      width: 25%;
+      font-size: 14px;
+      text-align: center;
+      padding: 0.3em 0;
+      border-radius: 0.2em;
+    }
+    p {
+      font-size: 14px;
+      @include weight(regular);
+    }
+  }
+  #card__content {
+    @include flex-center(column, flex-start);
+    @include indentation;
+    width: 90%;
+    height: 45%;
+    gap: 1em;
+
+    h1 {
+      font-size: 22px;
+      cursor: default;
+    }
+
+    p {
+      font-size: 14px;
+      color: $Gray;
+    }
+  }
+  #footer {
+    @include flex-center(row, center);
+    justify-content: flex-start;
+    margin: 1.2em;
+    gap: 0.5em;
+
+    .footer__img {
+      width: 15%;
+    }
+    p {
+      font-size: 13px;
+      @include weight(bold);
+    }
+  }
+}
+#card:hover #card__content h1 {
+  color: $background;
+}
+
+.attribution {
+  margin-top: 1em;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
